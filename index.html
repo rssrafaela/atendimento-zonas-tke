@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Atendimento por Zona | TK Elevator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- =========================================
+             CABEÇALHO
+        ========================================== -->
+        <header class="header">
+
+            <div class="header-logo">
+                <img src="logo-tke.png" alt="TK Elevator">
+            </div>
+
+            <div class="header-center">
+
+                <h1>
+                    Atendimento por Zona
+                </h1>
+
+                <p>
+                    Filial Rio de Janeiro
+                </p>
+
+            </div>
+
+            <div class="header-company">
+                TK Elevator
+            </div>
+
+        </header>
+
+
+        <!-- =========================================
+             CONTEÚDO
+        ========================================== -->
+        <main class="main">
+
+            <!-- =====================================
+                 TÍTULO
+            ====================================== -->
+            <section class="section-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        ATENDIMENTO AO CLIENTE
+                    </span>
+
+                    <h2>
+                        Responsáveis por Zona
+                    </h2>
+
+                </div>
+
+                <p>
+                    Consulte os responsáveis e os bairros
+                    atendidos pela sua região.
+                </p>
+
+            </section>
+
+
+            <!-- =====================================
+                 PESQUISA DE BAIRRO
+            ====================================== -->
+            <section class="search-area">
+
+                <div class="search-content">
+
+                    <div class="search-heading">
+
+                        <div class="search-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M9.5 3a6.5 6.5 0 1 0 3.98 11.64L19.85 21 21 19.85l-6.36-6.37A6.5 6.5 0 0 0 9.5 3zm0 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9z"
+                                />
+                            </svg>
+
+                        </div>
+
+                        <div>
+                            <span>
+                                NÃO SABE QUAL É A SUA ZONA?
+                            </span>
+
+                            <h3>
+                                Pesquise pelo seu bairro
+                            </h3>
+
+                            <p>
+                                Digite o bairro para localizar
+                                a zona e os responsáveis pelo atendimento.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="search-box">
+
+                        <div class="input-wrapper">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M9.5 3a6.5 6.5 0 1 0 3.98 11.64L19.85 21 21 19.85l-6.36-6.37A6.5 6.5 0 0 0 9.5 3zm0 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9z"
+                                />
+                            </svg>
+
+                            <input
+                                type="text"
+                                id="bairroSearch"
+                                placeholder="Ex.: Copacabana, Tijuca, Méier..."
+                                autocomplete="off"
+                                list="bairrosList"
+                            >
+
+                            <datalist id="bairrosList"></datalist>
+
+                            <button
+                                id="clearSearch"
+                                class="clear-search"
+                                type="button"
+                                aria-label="Limpar pesquisa"
+                            >
+                                ×
+                            </button>
+
+                        </div>
+
+
+                        <button
+                            id="searchButton"
+                            class="search-button"
+                            type="button"
+                        >
+                            Buscar zona
+                        </button>
+
+                    </div>
+
+
+                    <!-- RESULTADO -->
+                    <div
+                        id="searchResult"
+                        class="search-result"
+                    ></div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================================
+                 DIVISOR
+            ====================================== -->
+            <div class="zones-heading">
+
+                <div>
+                    <span>
+                        TODAS AS ZONAS
+                    </span>
+
+                    <h3>
+                        Contatos e regiões atendidas
+                    </h3>
+                </div>
+
+                <span id="zoneCounter"></span>
+
+            </div>
+
+
+            <!-- =====================================
+                 ZONAS GERADAS PELO JAVASCRIPT
+            ====================================== -->
+            <section
+                id="zonesGrid"
+                class="zones-grid"
+            ></section>
+
+        </main>
+
+
+        <!-- =========================================
+             RODAPÉ
+        ========================================== -->
+        <footer class="footer">
+
+            <span>
+                TK Elevator • Filial Rio de Janeiro
+            </span>
+
+            <span>
+                Atendimento por Zona
+            </span>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
