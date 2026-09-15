@@ -176,8 +176,8 @@ const zones = [
 
         consultant: {
             name: "Pedro Ivo Valente do Carmo Gomes",
-            phone: "21971240507",
-            phoneFormatted: "(21) 97124-0507",
+            phone: "21999945624",
+            phoneFormatted: "(21) 99994-5624",
             email: "pedro.gomes2@tkelevator.com"
         },
 
