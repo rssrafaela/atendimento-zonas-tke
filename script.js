@@ -398,29 +398,6 @@ neighborhoods: []
     },
 
 
-    // ======================================================
-    // ZONA 19
-    // ======================================================
-    {
-        number: "19",
-
-        badge: "Globo",
-
-        supervisor: {
-            name: "A definir"
-        },
-
-        consultant: {
-            name: "Renata Martins Martellote de Castilho",
-            phone: "21997983380",
-            phoneFormatted: "(21) 99798-3380",
-            email: "renata.castilho@tkelevator.com"
-        },
-
-        neighborhoods: []
-    },
-  ];
-
 // ==========================================================
 // ÍCONE DO WHATSAPP
 // ==========================================================
