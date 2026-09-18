@@ -1915,3 +1915,53 @@ span.found-neighborhood {
 @media (max-width: 700px) {
     .manager-zones { padding: 13px 16px 15px; }
 }
+/* =========================================
+   CENTRAL DE ATENDIMENTO AO CLIENTE
+========================================= */
+.support-center {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr);
+    gap: 20px 28px;
+    margin-bottom: 42px;
+    padding: 28px;
+    overflow: hidden;
+    border: 1px solid var(--gray-200);
+    border-radius: 16px;
+    background: linear-gradient(135deg, #faf7fd 0%, #ffffff 58%, #fffaf7 100%);
+    box-shadow: 0 5px 22px rgba(0,0,0,.05);
+}
+.support-intro { align-self: center; }
+.support-eyebrow { display:block; margin-bottom:7px; color:var(--orange); font-size:11px; font-weight:900; letter-spacing:1.3px; }
+.support-intro h2 { color:var(--dark); font-size:clamp(25px,2vw,34px); line-height:1.12; }
+.support-intro p { max-width:680px; margin-top:9px; color:var(--gray-600); font-size:14px; line-height:1.55; }
+.support-phone-card { padding:17px 19px; border:1px solid rgba(101,0,200,.14); border-radius:12px; background:var(--white); }
+.support-card-label { display:block; margin-bottom:9px; color:var(--purple); font-size:9px; font-weight:900; letter-spacing:1px; }
+.support-phone-link { display:flex; align-items:center; gap:12px; color:var(--dark); }
+.support-round-icon { width:42px; height:42px; display:flex; align-items:center; justify-content:center; flex-shrink:0; border-radius:50%; background:var(--purple); color:#fff; font-size:19px; }
+.support-phone-link small,.support-whatsapp small { display:block; margin-bottom:2px; color:var(--gray-500); font-size:9px; font-weight:800; letter-spacing:.45px; }
+.support-phone-link strong { display:block; font-size:22px; line-height:1; }
+.support-phone-link:hover strong { color:var(--purple); }
+.support-options { grid-column:1/-1; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+.support-option { display:flex; align-items:center; gap:11px; min-width:0; padding:13px 15px; border:1px solid var(--gray-200); border-radius:10px; background:var(--white); }
+.support-option > span { width:31px; height:31px; display:flex; align-items:center; justify-content:center; flex-shrink:0; border-radius:7px; background:var(--dark); color:#fff; font-size:13px; font-weight:900; }
+.support-option small { display:block; color:var(--gray-500); font-size:8px; font-weight:900; letter-spacing:.7px; }
+.support-option strong { display:block; margin-top:2px; color:var(--dark); font-size:12px; }
+.support-whatsapp { grid-column:1/-1; display:flex; align-items:center; gap:12px; padding:15px 18px; border:1px solid rgba(32,179,88,.22); border-radius:11px; background:#f6fcf8; color:var(--dark); transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease; }
+.support-whatsapp svg { width:31px; height:31px; flex-shrink:0; fill:var(--whatsapp); }
+.support-whatsapp strong { display:block; color:#159447; font-size:15px; }
+.support-action { margin-left:auto; color:#159447; font-size:11px; font-weight:900; white-space:nowrap; }
+.support-whatsapp:hover { transform:translateY(-1px); border-color:var(--whatsapp); box-shadow:0 5px 15px rgba(0,0,0,.05); }
+
+@media (max-width: 850px) {
+    .support-center { grid-template-columns:1fr; padding:22px; }
+    .support-phone-card,.support-options,.support-whatsapp { grid-column:1; }
+    .support-options { grid-template-columns:1fr; }
+}
+@media (max-width: 520px) {
+    .support-center { padding:18px 15px; gap:16px; margin-bottom:30px; }
+    .support-intro h2 { font-size:25px; }
+    .support-phone-card { padding:15px; }
+    .support-phone-link strong { font-size:20px; }
+    .support-whatsapp { align-items:flex-start; padding:14px; }
+    .support-action { display:none; }
+}
