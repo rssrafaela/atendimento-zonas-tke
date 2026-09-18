@@ -249,7 +249,6 @@ const zones = [
       "Curicica",
       "Guaratiba",
       "Jacarepaguá",
-      "Leblon",
       "Pechincha",
       "Recreio dos Bandeirantes",
       "Vargem Grande",
