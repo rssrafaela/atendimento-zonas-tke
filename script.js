@@ -302,10 +302,10 @@ const zones = [
     number: "10",
 
     supervisor: {
-      name: "Rodrigo Odilon dos Ramos",
-      phone: "21995047668",
-      phoneFormatted: "(21) 99504-7668",
-      email: "rodrigo.ramos@tkelevator.com",
+      name: "Denis Conde Santos",
+      phone: "21971507638",
+      phoneFormatted: "(21) 97150-7638",
+      email: "denis.santos@tkelevator.com",
     },
 
     consultant: {
@@ -338,10 +338,11 @@ const zones = [
     },
 
     consultant: {
-      name: "Renata Costa Hygino de Miranda",
-      phone: "21996133919",
-      phoneFormatted: "(21) 99613-3919",
-      email: "renata.miranda@tkelevator.com",
+      name: "Pedro Cassiano de Oliveira Neto",
+      phone: "21998881030", 
+ 
+      phoneFormatted: "(21) 99888-1030",
+      email: "pedro.neto1@tkelevator.com",
     },
 
     neighborhoods: [
@@ -1500,4 +1501,4 @@ if (clearSearch) {
     }
   );
 
-}v
+}
